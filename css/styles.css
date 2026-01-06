@@ -67,7 +67,7 @@ body {
 }
 
 .navbar {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .navbar .container {
@@ -81,10 +81,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     margin: 0;
+    font-size: 1.5rem;
 }
 
 .nav-brand .tagline {
-    font-size: 12px;
+    font-size: 10px;
     color: #666;
     display: block;
 }
