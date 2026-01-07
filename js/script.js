@@ -6,7 +6,31 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactForm();
     initScrollAnimations();
     initSmoothScrolling();
+    initTransparentHeader();
 });
+
+// Header transparente na página inicial
+function initTransparentHeader() {
+    const header = document.querySelector('.header');
+    const heroSection = document.querySelector('#inicio');
+    
+    // Adicionar classe transparente inicialmente
+    if (heroSection) {
+        header.classList.add('transparent');
+    }
+    
+    // Controlar transparência com scroll
+    window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const heroHeight = heroSection ? heroSection.offsetHeight : 0;
+        
+        if (scrolled < heroHeight - 100) {
+            header.classList.add('transparent');
+        } else {
+            header.classList.remove('transparent');
+        }
+    });
+}
 
 // Navegação Mobile
 function initNavigation() {
