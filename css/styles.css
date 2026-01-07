@@ -881,9 +881,10 @@ html {
         rgba(0, 0, 0, 0.4) 100%
     );
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     z-index: 2;
+    padding-bottom: 15vh;
 }
 
 .hero-fullscreen .hero-content {
@@ -949,6 +950,10 @@ html {
     
     .hero-fullscreen .hero-content {
         padding: 1rem;
+    }
+    
+    .hero-fullscreen .hero-overlay {
+        padding-bottom: 8vh;
     }
     
     .btn-scroll {
